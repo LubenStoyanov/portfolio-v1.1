@@ -1,0 +1,143 @@
+:root {
+    --black: #171321;
+    --blue: #2384d9;
+    --lightgreen: #21bf65;
+    --dgreen: #1a9951;
+    --yellowish: #f2ab27;
+    --hotyellowish: #f2c827;
+    --redish: #f23d3d;
+    --hotredish: #ff4040;
+    --white: #f2f1f0;
+    --font-size: 1.125rem;
+    --philosopher: Philosopher, sans-serif;
+    --mulish: Mulish, monospace;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--philosopher);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--yellowish);
+}
+
+a:hover {
+    color: var(--yellowish);
+    text-decoration: none;
+}
+
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro h2 {
+    font-size: 4rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro p:first-child {
+    font-family: var(--mulish);
+}
+
+.name {
+    color: var(--lightgreen);
+    display: block;
+    font-family: var(--philosopher);
+    font-size: 4rem;
+}
+
+#contact {
+    background-color: var(--redish);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact p {
+    max-width: 30ch;
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+#contact a {
+    background-color: var(--dgreen);
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav {
+    font-family: var(--mulish);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--philosopher);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+nav [class*="fa-"] {
+    font-size: 175%;
+    color: var(--lightgreen);
+}
+
+nav h1 [class*="fa-"] {
+    font-size: 100%;
+    margin-right: 0.25rem;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+    color: var(--yellowish);
+}
