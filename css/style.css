@@ -71,7 +71,8 @@ a:hover {
 }
 
 #contact {
-    background-color: var(--redish);
+    background-color: var(--yellowish);
+    color: var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +89,7 @@ a:hover {
 }
 
 #contact a {
-    background-color: var(--dgreen);
+    background-color: var(--redish);
     color: var(--white);
     font-size: 2rem;
     padding: 1rem;
@@ -97,11 +98,12 @@ a:hover {
 
 nav {
     font-family: var(--mulish);
-    font-size: 80%;
+    font-size: 1rem;
     padding: 1rem;
 }
 
 nav h1 a {
+    /* FIXME: hover state of h1 and terminal icon*/
     font-family: var(--philosopher);
 }
 
@@ -140,4 +142,50 @@ nav h1 [class*="fa-"] {
 nav a:hover,
 nav [class*="fa-"]:hover {
     color: var(--yellowish);
+}
+
+.button {
+    background-color: var(--redish);
+    color: white;
+    border-radius: 5px;
+    font-size: var(--font-size);
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--hotredish);
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 3rem;
+    gap: 3rem;
+}
+
+/* footer a {
+    color: var(--lightgreen);
+} */
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
 }
