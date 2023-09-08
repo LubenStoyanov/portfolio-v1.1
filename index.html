@@ -4,17 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Luben Stoyanov | Web Developer</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Mulish&family=Philosopher&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header>
@@ -67,7 +67,62 @@
                 <a href="https://github.com/LubenStoyanov">web development</a>.
             </p>
         </section>
-        <section id="contact">
+        <div class="bg-blue gradient-border-top">
+            <section id="projects">
+                <h2>Favorite Projects</h2>
+                <article>
+                    <div class="text">
+                        <h4>Latest Project</h4>
+                        <h3>Word Masters</h3>
+                        <p class="black-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Repellat, praesentium? Laboriosam, beatae
+                            error, cumque molestiae fugit exercitationem hic ad
+                            nostrum voluptatum quod et eius amet adipisci,
+                            veniam excepturi. Nam, nostrum.
+                        </p>
+                        <h4>Technologies used include:</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>AJAX</li>
+                            <li>Web API</li>
+                        </ul>
+                    </div>
+                    <img
+                        src="/img/word-masters.png"
+                        alt="Screenshot of my first portfolio website."
+                    />
+                </article>
+                <article>
+                    <div class="text">
+                        <h4>Personal Project</h4>
+                        <h3>Previous Portfolio Website</h3>
+                        <p class="black-box">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed iure, praesentium quae illum neque
+                            temporibus deserunt possimus accusamus officia
+                            tempora quod sequi ipsam. Eveniet maxime itaque,
+                            iste odit blanditiis quasi.
+                        </p>
+                        <h4>Technologies used include:</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/Tailwind/styled-components</li>
+                            <li>JavaScript</li>
+                            <li>React.js/Next.js</li>
+                            <li>i18next</li>
+                        </ul>
+                    </div>
+                    <img
+                        src="/img/portfolio-v1.1.png"
+                        alt="Screenshot of my first portfolio website."
+                    />
+                </article>
+            </section>
+        </div>
+        <section id="contact" class="gradient-border-top">
             <h2>Contact me</h2>
 
             <p>
@@ -76,9 +131,14 @@
                 the latest hot stuff.
             </p>
 
-            <p><a href="mailto:luben.stoyanov.ls@gmail.com">Email me</a></p>
+            <p>
+                <a class="button" href="mailto:luben.stoyanov.ls@gmail.com"
+                    >Email me</a
+                >
+                <!-- TODO: Create contact form instead of email button -->
+            </p>
         </section>
-        <footer>
+        <footer class="gradient-border-top">
             <h2>Luben Stoyanov &middot; Web Developer</h2>
             <ul>
                 <li>
