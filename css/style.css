@@ -195,36 +195,41 @@ footer ul {
     border-image-slice: 1;
 }
 
-#projects {
+#about, #projects {
     padding: 4rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-#projects h2 {
+#about h2, #projects h2 {
     font-size: 2.5rem;
     margin-bottom: calc(2.5rem * 1.5);
 }
 
-#projects h3 {
+#about h2, #projects h3 {
     color: var(--lightgreen);
 }
 
-#projects h4 {
+#about h4, #projects h4 {
     font-size: 1rem;
     font-family: var(--mulish);
 }
 
-.black-box {
+.black-box, #about .black-box ul {
     background-color: var(--black);
     padding: 1rem;
     border-radius: 10px;
     color: var(--white);
     font-size: 1rem;
     line-height: 1.5;
+    font-size: 1.125rem;
 }
 
-#projects ul {
+#about .black-box ul {
+    display: block;
+}
+
+#about ul, #projects ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -235,10 +240,15 @@ footer ul {
     font-size: 1rem;
 }
 
-#projects ul li {
+#about img {
+    width: 300px;
+} 
+
+#about p {
+    margin: 0;
 }
 
-#projects img {
+#about img, #projects img {
     margin: 2rem 0 4rem 0;
     border-left: 1px solid var(--lightgreen);
     border-top: 1px solid var(--lightgreen);
@@ -246,7 +256,23 @@ footer ul {
     padding: 1rem;
 }
 
-@media (min-width: 550px) {
+#about article img {
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    #about article {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+
+    #about article .text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     #projects article {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
