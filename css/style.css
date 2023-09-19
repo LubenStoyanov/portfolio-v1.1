@@ -103,14 +103,11 @@ img {
     max-width: 30ch;
 }
 
-#contact p:last-child {
-    margin-top: 3rem;
-}
 
 nav {
     font-family: var(--mulish);
     font-size: 1rem;
-    padding: 1rem;
+    padding: 4rem 1rem;
 }
 
 nav h1 a {
@@ -189,11 +186,6 @@ footer ul {
 .gradient-border-top {
     border-top: 2px solid transparent;
     border-image-source: linear-gradient(90deg, rgba(33,191,101,1) 33%, rgba(242,171,39,1) 66%, rgba(242,61,61,1) 100%);
-    /*border-image-source: linear-gradient(
-        90deg,
-        rgba(242, 171, 39, 1) 0%,
-        rgba(242, 61, 61, 1) 100%
-    );*/
     border-image-slice: 1;
 }
 
