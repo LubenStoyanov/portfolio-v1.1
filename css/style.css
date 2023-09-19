@@ -2,7 +2,9 @@
     --black: #171321;
     --blue: #032999;
     --lightblue: #6507FF;
+    --green: #005C41;
     --lightgreen: #21bf65;
+    --orange: #F57300;
     --yellowish: #f2ab27;
     --redish: #f23d3d;
     --hotredish: #ff4040;
@@ -87,7 +89,7 @@ img {
 }
 
 #contact {
-    background-color: var(--lightblue);
+    background-color: var(--green);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,8 +208,9 @@ footer ul {
     margin-bottom: calc(2.5rem * 1.5);
 }
 
-#about h2, #projects h3 {
+#about h3, #projects h3 {
     color: var(--lightgreen);
+    font-size: 1.5rem;
 }
 
 #about h4, #projects h4 {
