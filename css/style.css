@@ -1,12 +1,11 @@
 :root {
     --black: #171321;
     --blue: #032999;
+    --lightblue: #6507FF;
     --lightgreen: #21bf65;
     --yellowish: #f2ab27;
     --redish: #f23d3d;
     --hotredish: #ff4040;
-    --purple: #7f00f5;
-    --olive: #516324;
     --white: #f2f1f0;
     --font-size: 1.125rem;
     --philosopher: Philosopher, sans-serif;
@@ -88,7 +87,7 @@ img {
 }
 
 #contact {
-    background-color: var(--olive);
+    background-color: var(--lightblue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,11 +186,12 @@ footer ul {
 
 .gradient-border-top {
     border-top: 2px solid transparent;
-    border-image-source: linear-gradient(
+    border-image-source: linear-gradient(90deg, rgba(33,191,101,1) 33%, rgba(242,171,39,1) 66%, rgba(242,61,61,1) 100%);
+    /*border-image-source: linear-gradient(
         90deg,
         rgba(242, 171, 39, 1) 0%,
         rgba(242, 61, 61, 1) 100%
-    );
+    );*/
     border-image-slice: 1;
 }
 
