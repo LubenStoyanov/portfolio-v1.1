@@ -5,7 +5,8 @@
     --orange: #f9a41d;
     --yellowish: #f8ce60;
     --redish: #f23d3d;
-    --hotredish: #ff4040;
+    --hotredish: #f95b71;
+    --purple: #9d94d4;
     --white: #f2f1f0;
     --font-size: 1.125rem;
     --philosopher: Philosopher, sans-serif;
@@ -38,7 +39,8 @@ h4 {
 }
 
 a {
-    color: var(--yellowish);
+    color: var(--purple);
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover {
@@ -114,8 +116,14 @@ nav {
 }
 
 nav h1 a {
-    /* FIXME: hover state of h1 and terminal icon*/
     font-family: var(--philosopher);
+    transition: all 0.2s ease-in-out;
+}
+
+nav h1 a:hover {
+    font-family: var(--philosopher);
+    color: var(--lightgreen);
+    text-decoration: none;
 }
 
 nav ul {
@@ -138,11 +146,13 @@ nav a {
     color: var(--white);
     text-decoration: none;
     display: block;
+    transition: all 0.2s ease-in-out;
 }
 
 nav [class*="fa-"] {
     font-size: 175%;
     color: var(--lightgreen);
+    transition: all 0.2s ease-in-out;
 }
 
 nav h1 [class*="fa-"] {
@@ -151,9 +161,8 @@ nav h1 [class*="fa-"] {
 }
 
 nav a:hover,
-nav [class*="fa-"]:hover {
+nav li:not(:first-child) [class*="fa-"]:hover {
     color: var(--yellowish);
-    text-decoration: underline;
     text-underline-offset: auto;
 }
 
@@ -174,7 +183,7 @@ nav li:last-child a {
 
 .button:hover {
     color: var(--blue);
-    background-color: var(--yellowish);
+    background-color: var(--hotredish);
     transform: scale(1.0.5);
 }
 
@@ -196,7 +205,7 @@ footer ul {
 
 .gradient-border-top {
     border-top: 2px solid transparent;
-    border-image-source: linear-gradient(90deg, rgba(33,191,101,1) 33%, rgba(242,171,39,1) 66%, rgba(242,61,61,1) 100%);
+    border-image-source: linear-gradient(90deg, #3ee3e4 33%, #2ee6b1 66%, #d11ac9 100%);
     border-image-slice: 1;
 }
 
@@ -204,7 +213,7 @@ footer ul {
     padding: 4rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    color: #9d94d4;
+    color: var(--purple);
 }
 
 #about article {
