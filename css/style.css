@@ -4,7 +4,6 @@
     --lightgreen: #21bf65;
     --orange: #f9a41d;
     --yellowish: #f8ce60;
-    --redish: #f23d3d;
     --hotredish: #f95b71;
     --purple: #9d94d4;
     --white: #f2f1f0;
@@ -183,7 +182,7 @@ nav li:last-child a {
 .button:hover {
     color: var(--blue);
     background-color: var(--hotredish);
-    transform: scale(1.5);
+    transform: scale(1.05);
 }
 
 footer {
