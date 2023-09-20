@@ -1,11 +1,9 @@
 :root {
     --black: #171321;
-    --blue: #032CA6;
-    --lightblue: #6507FF;
-    --green: #005C41;
+    --blue: #142447;
     --lightgreen: #21bf65;
-    --orange: #F57300;
-    --yellowish: #f2ab27;
+    --orange: #f9a41d;
+    --yellowish: #f8ce60;
     --redish: #f23d3d;
     --hotredish: #ff4040;
     --white: #f2f1f0;
@@ -89,13 +87,18 @@ img {
 }
 
 #contact {
-    background-color: var(--green);
+    background-color: var(--lightgreen);
+    color: var(--blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3rem 1rem;
     text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;;
 }
 
 #contact p {
@@ -150,21 +153,29 @@ nav h1 [class*="fa-"] {
 nav a:hover,
 nav [class*="fa-"]:hover {
     color: var(--yellowish);
+    text-decoration: underline;
+    text-underline-offset: auto;
+}
+
+nav li:last-child a {
+    text-decoration: none;
 }
 
 .button {
-    background-color: var(--redish);
-    color: white;
+    background-color: var(--orange);
+    color: var(--blue);
     border-radius: 5px;
     font-size: var(--font-size);
     font-family: var(--mulish);
     padding: 0.5rem;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
-    color: var(--white);
-    background-color: var(--hotredish);
+    color: var(--blue);
+    background-color: var(--yellowish);
+    transform: scale(1.0.5);
 }
 
 footer {
@@ -193,6 +204,7 @@ footer ul {
     padding: 4rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    color: #9d94d4;
 }
 
 #about article {
