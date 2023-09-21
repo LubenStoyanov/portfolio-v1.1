@@ -57,6 +57,10 @@ img {
     object-fit: contain;
 }
 
+.Typewriter__wrapper {
+    font-size: 2.75rem;
+}
+
 #intro {
     padding: 4rem 1rem 10rem 1rem;
     max-width: 1200px;
@@ -110,7 +114,7 @@ img {
 nav {
     font-family: var(--mulish);
     font-size: 1rem;
-    padding: 4rem 1rem;
+    padding: 4rem 1rem 0 1rem;
 }
 
 nav h1 a {
@@ -309,7 +313,27 @@ footer ul {
     color: var(--yellowish);
 }
 
+@media (min-width: 375) {
+    .Typewriter__wrapper {
+        font-size: 2.9rem;
+    }
+}
+
+@media (min-width: 390) {
+    .Typewriter__wrapper {
+        font-size: 3rem;
+    }
+}
+
 @media (min-width: 768px) {
+    .Typewriter__wrapper {
+        font-size: 4rem;
+    }
+
+    nav {
+        padding: 4rem 1rem;
+    }
+
     #about article {
         display: flex;
         flex-direction: row-reverse;

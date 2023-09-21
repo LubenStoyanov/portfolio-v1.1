@@ -6,7 +6,8 @@ const app = document.querySelector("#typewriter");
 
 var typewriter = new Typewriter(app, {
   loop: true,
-  delay: 75,
+  delay: "natural",
+  deleteSpeed: "natural",
 });
 
 typewriter
