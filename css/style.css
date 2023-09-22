@@ -58,7 +58,7 @@ img {
 }
 
 .Typewriter__wrapper {
-    font-size: 2.75rem;
+    font-size: 2.7rem;
 }
 
 #intro {
@@ -315,7 +315,7 @@ footer ul {
 
 @media (min-width: 375) {
     .Typewriter__wrapper {
-        font-size: 2.9rem;
+        font-size: 2.8rem;
     }
 }
 
