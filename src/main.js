@@ -10,7 +10,7 @@ var typewriter = new Typewriter(app, {
   deleteSpeed: "natural",
 });
 
-typewriter
+window.onload = () => typewriter
   .typeString('I create the web.')
   .pauseFor(300)
   .deleteChars(17)
