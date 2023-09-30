@@ -13,19 +13,19 @@ if (!window.location.href.endsWith("about/")) {
 
   typewriter
     .typeString('I create the web.')
-    .pauseFor(300)
+    .pauseFor(500)
     .deleteChars(17)
     .typeString('I ride a bicycle.')
-    .pauseFor(300)
+    .pauseFor(500)
     .deleteChars(17)
     .typeString('I play chess.')
-    .pauseFor(300)
+    .pauseFor(500)
     .deleteChars(13)
     .typeString('I lift weights.')
-    .pauseFor(300)
+    .pauseFor(500)
     .deleteChars(15)
     .typeString('I play the piano.')
-    .pauseFor(300)
+    .pauseFor(500)
     .deleteChars(17)
     .start();
 }
