@@ -7,8 +7,8 @@ const app = document.querySelector("#typewriter");
 if (!window.location.href.endsWith("about/")) {
   let typewriter = new Typewriter(app, {
     loop: true,
-    delay: "natural",
-    deleteSpeed: "natural",
+    delay: 75,
+    deleteSpeed: 25,
   });
 
   typewriter
